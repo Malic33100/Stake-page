@@ -14,6 +14,26 @@ h1 {
     text-align:center;
 }
 
+.carousel1 {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    height: 280px;
+    width:100%;
+    overflow: hidden;
+    align-self: center;
+    }
+    
+     .img {
+         width: 500px;
+         height: 250px;
+         object-fit: cover;
+     }
+    
+    .image-container {
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+    }
+
 .faq-container {
    max-width:600px;
     margin: 0 auto;
