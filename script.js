@@ -7,28 +7,36 @@ toggles.forEach(toggle => {
 });
 
 const imgs = document.getElementById("imgs");
+const imgs2 = document.getElementById("imgs2");
 /* image carousel identifiers */
 const img = document.querySelectorAll('#imgs img');
+const img2 = document.querySelectorAll('#imgs2 img2');
 
 /* toggle faq buttons*/
+
 let idx = 0;
-let interval = setInterval(run, 4000);
+let idx2 = 14.25;
+
+let interval = setInterval(run, 3000);
 
 function run() {
     idx++;
+    idx2--;
     changeImage()
 }
 
 function changeImage() {
-if(idx > img.length - 1){
-    idx = 0
+if(idx > 10.5){
+    idx = 0;
+    idx2 = 13.25;
 }else if(idx < 0){
     idx = img.length - 1;
 }
-imgs.style.transform = `translateX(${-idx * 250}px)`;
+imgs.style.transform = `translateX(${-idx * 231}px)`;
+imgs2.style.transform = `translateX(${-idx2 * 231}px)`;
 }
 
 function resetInterval () {
 clearInterval();
-interval = setInterval(run, 4000);
+interval = setInterval(run, 3000);
 }

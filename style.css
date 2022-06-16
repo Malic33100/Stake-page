@@ -6,42 +6,117 @@
 
 body{
     font-family: "Montserrat" , sans-serif;
-   background-color: #f0f0f0;
+   background-color: #000;
+   height: auto;
+   overflow-x: hidden;
 };
+
+.logo  {
+width: 300px;
+height: 300px;
+}
+
+.Stake-title {
+    display:flex;
+    height: auto;
+}
 
 h1 {
     margin: 50px 0px 30px;
     text-align:center;
 }
 
+#carousel-containers {
+    display: block;
+    height:auto;
+    justify-self: center;
+    width: auto;
+    flex-direction: column;
+    align-content: flex-end;
+}
+
 .carousel1 {
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    height: 280px;
-    width:100%;
+    box-shadow: 3px -4px 3px  rgba(226, 234, 12, 0.881);
+    height: 25%;
+    width:auto;
+    display: flex;
     overflow: hidden;
-    align-self: center;
+    margin-bottom:none;
     }
-    
-     .img {
-         width: 500px;
-         height: 250px;
+
+#Board {
+        display: flex;
+        height: 50%;
+        width: auto;
+        align-self: center;
+        justify-content: center;
+    }
+
+.carousel2 {
+        box-shadow: 4px 3px 4px  rgba(226, 234, 12, 0.881);
+        height: 25%;
+        width:100%;
+        display: flex;
+        overflow: hidden;
+        margin-bottom:none;
+        margin-top: none;
+        }
+
+#imgs {
+        display: inline-flex;
+        width: auto;
+    }
+
+#imgs2 {
+        display: inline-flex;
+        width: auto;
+}
+
+.img {
+         width: 231px;
+         height: 140px;
+         align-items: center;
          object-fit: cover;
      }
+
+.img2 {
+        width: 231px;
+        height: 140px;
+        align-items: center;
+        object-fit: cover;
+    }
     
-    .image-container {
+.image-container {
     display: flex;
+    width: 100%;
     transform: translateX(0);
+    overflow-wrap: normal;
     transition: transform 0.5s ease-in-out;
     }
 
+.image-container2 {
+        display: flex;
+        width: 100%;
+        overflow: initial;
+        transform: translateX(0);
+        transition: transform 0.5s ease-in-out;
+        }
+
+    /* break */
+    #faq-contact-container {
+        display: flex;
+        align-content: center;
+    }
+
 .faq-container {
-   max-width:600px;
+   max-width:37.5rem;
     margin: 0 auto;
 }
 
 .faq {
+    color: goldenrod;
     background-color: transparent;
-    border: 1px solid #9fa4a8;
+    border: 1px solid rgba(255, 215, 0);
     border-radius: 10px;
     margin: 20px 0;
     padding: 30px;
@@ -68,10 +143,15 @@ box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
     }
 
     .faq.active::before {
-        color: #3498db;
+        color: #fff;
         top: -10px;
         left:-30px;
         transform: rotate(180deg);
+    }
+
+    .fa-chevron-down {
+        color:#fff;
+
     }
 
     .faq-title {
@@ -81,6 +161,9 @@ box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
 
     .faq-text {
         display:none;
+        color:#000;
+        text-align: center;
+        font-family: 'Montserrat';
         margin: 30px 0 0;
     }
 
