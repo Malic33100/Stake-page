@@ -8,7 +8,6 @@ body{
   font-family: "Montserrat" , sans-serif;
    background-color: #000;
    min-height: 100%;
-   min-width:100vw;
    margin:none;
    overflow-x: hidden;
 };
@@ -18,19 +17,37 @@ width: 300px;
 height: 300px;
 }
 
+@media (min-width: 550px) {
+    .hidden-mobile {
+        display:none;
+    }
+
+    .mobile {
+        width:90%;
+        justify-self: center;
+    }
+}
+
+.mobile {
+    color:#FFD700;
+    width: 50%;
+}
+
 #Stake {
     display:flex;
-    width:281px;
+    height: 100%;
+    width:25%;
 }
 
 #Funny {
     display:flex;
-    width:270px;
+    height: 100%;
+    width:25%;
 }
 
 .Stake-title {
     display:flex;
-    height: auto;
+    height: 20vh;
     align-content: space-between;
     justify-content: space-between;
 }
@@ -45,7 +62,7 @@ h1 {
     height:auto;
     background-color:rgba(226, 234, 12, 0.881);
     justify-self: center;
-    width: auto;
+    width: 100%;
     overflow: hidden;
     flex-direction: column;
     align-content: flex-end;
@@ -56,7 +73,7 @@ h1 {
     height: 25%;
     width:auto;
     display: flex;
-    overflow: hidden;
+    overflow: unset;
     margin-bottom:none;
     }
 
@@ -64,7 +81,6 @@ h1 {
         display: flex;
         height: auto;
         width: 100%;
-        overflow: hidden;
         margin-left:none;
         align-self: center;
         justify-content: space-around;
@@ -80,37 +96,36 @@ h1 > .space {
 }
 
 .carousel2 {
-        box-shadow: 4px 3px 4px  rgba(226, 234, 12, 0.881);
+        box-shadow: -4px -3px 4px  rgba(226, 234, 12, 0.881);
         height: 25%;
         width:100%;
         display: flex;
-        overflow: hidden;
         margin-bottom:none;
         margin-top: none;
         }
 
 #imgs {
         display: inline-flex;
-        width: auto;
+        width: 100%;
     }
 
 #imgs2 {
         display: inline-flex;
-        width: auto;
+        width: 100%;
 }
 
 .img {
          width: 331px;
-         height: 140px;
+         height: 10rem;
          align-items: center;
          object-fit: cover;
      }
 
 .img2 {
         width: 331px;
-        height: 140px;
+        height: 10rem;
         align-items: center;
-        object-fit: cover;
+        object-fit: revert;
     }
     
 .image-container {
@@ -137,7 +152,7 @@ h1 > .space {
     }
 
 .faq-container {
-   max-width:37.5rem;
+   max-width:80vw;
     margin: 0 auto;
 }
 
@@ -147,6 +162,7 @@ h1 > .space {
     border: 1px solid rgba(255, 215, 0);
     border-radius: 10px;
     margin: 20px 0;
+    width:80vw;
     padding: 30px;
     position:relative;
     overflow:hidden;
