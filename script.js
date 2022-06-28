@@ -12,6 +12,16 @@ const imgs2 = document.getElementById("imgs2");
 const img = document.querySelectorAll('#imgs img');
 const img2 = document.querySelectorAll('#imgs2 img2');
 
+/* door animation */
+const slide = document.querySelectorAll('.space');
+slide.addEventListener("click",toggleSlide);
+
+/* function that opens and closes slide doors */
+
+function toggleSlide() {
+    slide.classList.toggle('openSlide');
+}
+
 /* toggle faq buttons*/
 
 let idx = 0;
