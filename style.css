@@ -95,7 +95,7 @@ h1 > .space {
 height: auto;
 transform-origin: left;
 transition: 0.5s all ease-out;
-}
+} 
 
 .space {
     height:80%;
@@ -104,9 +104,8 @@ transition: 0.5s all ease-out;
 
 .openSlide {
   /*prespectiv creates the door open effect*/
-  transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
+  transform: perspective(100%) translateZ(0px) translateX(-100%) translateY(0px) rotateY(-90deg);
 }
-
 
 .carousel2 {
         box-shadow: -4px -3px 4px  rgba(226, 234, 12, 0.881);
@@ -159,10 +158,10 @@ transition: 0.5s all ease-out;
         }
 
     /* break */
-    #faq-contact-container {
+#faq-contact-container {
         display: flex;
         align-content: center;
-    }
+}
 
 .faq-container {
    max-width:80vw;
