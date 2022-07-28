@@ -104,6 +104,7 @@ transition: 0.5s all ease-out;
 
 .openSlide {
   /*prespectiv creates the door open effect*/
+  background-color: #000;
   transform: perspective(100%) translateZ(0px) translateX(-100%) translateY(0px) rotateY(-90deg);
 }
 

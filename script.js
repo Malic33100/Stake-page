@@ -13,8 +13,8 @@ const img = document.querySelectorAll('#imgs img');
 const img2 = document.querySelectorAll('#imgs2 img2');
 
 /* door animation */
-const slide = document.querySelector('.space');
-slide.addEventListener("click",toggleSlide);
+//const slide = document.querySelector('.space');
+//slides.addEventListener("click",toggleSlide);
 
 /* function that opens and closes slide doors */
 
