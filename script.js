@@ -12,14 +12,14 @@ const imgs2 = document.getElementById("imgs2");
 const img = document.querySelectorAll('#imgs img');
 const img2 = document.querySelectorAll('#imgs2 img2');
 
-/* door animation */
-//const slide = document.querySelector('.space');
-//slides.addEventListener("click",toggleSlide);
+const slide = document.getElementsByClassName('.space');
+slide.addEventListener("click",toggleSlide);
 
 /* function that opens and closes slide doors */
 
 function toggleSlide() {
     slide.classList.toggle('openSlide');
+    console.log(slide);
 }
 
 /* toggle faq buttons*/

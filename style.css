@@ -35,14 +35,16 @@ height: 300px;
 
 #Stake {
     display:flex;
-    height: 100%;
-    width:25%;
+    height: auto;
+    width:auto;
+    object-fit: fill;
 }
 
 #Funny {
     display:flex;
-    height: 100%;
-    width:25%;
+    height: auto;
+    width:auto;
+    object-fit: fill;
 }
 
 .Stake-title {
@@ -81,7 +83,7 @@ h1 {
         display: flex;
         height: auto;
         width: 100%;
-        background-color:#000;
+        background-color:#fff;
         margin-left:none;
         align-self: center;
         justify-content: space-around;
@@ -92,20 +94,31 @@ h1 > .space {
 }
 
 .hidden-space {
-height: auto;
-transform-origin: left;
-transition: 0.5s all ease-out;
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:200px;
+    height:300px;
+   
+    transform-origin: left;
+    /*Speed of the Door animation*/
+    transition: all 0.5s ease-in-out;
 } 
 
 .space {
-    height:80%;
-    width: 33%;
+  position:relative;
+  width:200px;
+  height:300px;
+  border-color:#000;
+  margin: 0 auto;
+  margin-top:50px;
 }
 
-.openSlide {
+.openSlide 
+{
   /*prespectiv creates the door open effect*/
-  background-color: #000;
-  transform: perspective(100%) translateZ(0px) translateX(-100%) translateY(0px) rotateY(-90deg);
+  transform: perspective(1200px) translateZ(0px) 
+  translateX(0px) translateY(0px) rotateY(-105deg);
 }
 
 .carousel2 {
