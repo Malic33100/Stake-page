@@ -95,29 +95,25 @@ h1 > .space {
 
 .hidden-space {
     position:absolute;
-    top:0px;
-    left:0px;
-    width:200px;
-    height:300px;
-   
     transform-origin: left;
+    height: 100%;
+    width:100%;
     /*Speed of the Door animation*/
     transition: all 0.5s ease-in-out;
 } 
 
 .space {
   position:relative;
-  width:200px;
-  height:300px;
+  width:30%;
+  height:8rem;
   border-color:#000;
-  margin: 0 auto;
-  margin-top:50px;
+  margin: auto;
 }
 
 .openSlide 
 {
   /*prespectiv creates the door open effect*/
-  transform: perspective(1200px) translateZ(0px) 
+  transform: perspective(2.5em) translateZ(0px) 
   translateX(0px) translateY(0px) rotateY(-105deg);
 }
 
