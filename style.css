@@ -7,51 +7,37 @@
 body{
   font-family: "Montserrat" , sans-serif;
    background-color: #000;
-   min-height: 100%;
+   max-height: 100%;
    margin:none;
    overflow-x: hidden;
-};
-
-.logo {
-width: 300px;
-height: 300px;
-}
-
-@media (min-width: 550px) {
-    .hidden-mobile {
-        display:none;
-    }
-
-    .mobile {
-        width:90%;
-        justify-self: center;
-    }
 }
 
 .mobile {
+    display:flex;
+    margin:none;
     color:#FFD700;
-    width: 50%;
+    height:auto;
+    width: 40%;
+    font-size:5vw;
+    text-align: center;
+    overflow:clip;
 }
 
-#Stake {
-    display:flex;
-    height: auto;
-    width:auto;
-    object-fit: fill;
-}
-
-#Funny {
-    display:flex;
-    height: auto;
-    width:auto;
-    object-fit: fill;
-}
 
 .Stake-title {
     display:flex;
-    height: 20vh;
-    align-content: space-between;
-    justify-content: space-between;
+    height: 10%;
+    width:100%;
+    align-items: center;
+    overflow: clip;
+}
+
+.logo {
+display:flex;
+object-fit:cover;
+width: 30%;
+border-radius: 15%;
+height: auto;
 }
 
 h1 {
@@ -79,21 +65,20 @@ h1 {
     margin-bottom:none;
     }
 
-#Board {
+#score-board {
         display: flex;
-        height: auto;
+        height: 8rem;
         width: 100%;
         background-color:#fff;
         margin-left:none;
         align-self: center;
-        justify-content: space-around;
     }
 
 h1 > .space {
     margin:none;
 }
 
-.hidden-space {
+.hidden-board {
     position:absolute;
     transform-origin: left;
     height: 100%;
@@ -102,7 +87,7 @@ h1 > .space {
     transition: all 0.5s ease-in-out;
 } 
 
-.space {
+.board {
   position:relative;
   width:30%;
   height:8rem;

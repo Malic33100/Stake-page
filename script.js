@@ -9,10 +9,10 @@ toggles.forEach(toggle => {
 const imgs = document.getElementById("imgs");
 const imgs2 = document.getElementById("imgs2");
 /* image carousel identifiers */
-const img = document.querySelectorAll('#imgs img');
-const img2 = document.querySelectorAll('#imgs2 img2');
+const img = document.querySelectorAll('.img');
+const img2 = document.querySelectorAll('img2');
 
-const slide = document.getElementsByClassName('.space');
+const slide = document.querySelectorAll('.space');
 slide.addEventListener("click",toggleSlide);
 
 /* function that opens and closes slide doors */
